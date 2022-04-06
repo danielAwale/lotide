@@ -12,7 +12,7 @@ const tail = function(arry) {
   return result;
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
+const words = [1,2,3,4,5,6,7,8,9];
 tail(words);
-assertEqual(words.length, 3);
+assertEqual(words.length, 9);
 
