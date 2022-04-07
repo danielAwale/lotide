@@ -33,4 +33,4 @@ const countLetter = function(countString) {
     return obj;
 }
 
-countLetter("This is a string");
+console.log(countLetter("This is a string"));
