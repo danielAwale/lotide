@@ -19,13 +19,13 @@
 const swapper = function(key1, object1, key2, object2) {
   console.log('Swap!');
 
-  let valueOfKey2 = object2[key2];
-  let valueOfKey1 = object1[key1];
-  // stored the value of key2 object 2 which is 12
-  object1[key1] = valueOfKey2;
-  // swap that value with the value of key1 object 1
-  object2[key2] = valueOfKey1;
-  // changed the value of key2 object 2 to key 1 object
+let valueOfKey2 = object2[key2];
+let valueOfKey1 = object1[key1];
+ // stored the value of key2 object 2 which is 12
+object1[key1] = valueOfKey2
+ // swap that value with the value of key1 object 1 
+object2[key2] = valueOfKey1
+ // changed the value of key2 object 2 to key 1 object 
 
 
   console.log('object1: ', object1);
