@@ -13,12 +13,9 @@ const eqObjects = function(object1, object2) {
   }
 
   for (let key in object1){
-    // console.log(object1[key], object2[key], key) 
     if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       for (let i = 0; i < object1[key].length; i++){
         if(object1[key][i] !== object2[key][i]){
-          // console.log(object1[obj][i])
-          // console.log(object2[obj][i])
           return false;
           
         }
@@ -60,30 +57,6 @@ assertEqual(eqObjects(cd, dc), false);
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 assertEqual(eqObjects(cd, cd2), false); 
-
-// const testOne = {
-//   a: [1, 2, 3, 4, 5],
-//   b: false
-// }
-
-// const testTwo = {
-//   a: [undefined, null, 3, 4, 5],
-//   b: true
-// }
-
-// console.log(eqObjects(testOne, testTwo));
-
-// const testThree = {
-//   b: true,
-//   a: [2, 3, 4, 5]
-// }
-
-// const testFour = {
-//   b: true,
-//   a: [1, 2, 3, 4, 5],
-// }
-
-// console.log(eqObjects(testThree, testFour));
 
 
 module.exports = eqObjects;

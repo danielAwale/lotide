@@ -6,20 +6,14 @@ const eqObjects = function(object1, object2) {
   }
 
   for (let key in object1){
-    // console.log(object1[key], object2[key], key) 
     if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       for (let i = 0; i < object1[key].length; i++){
         if(object1[key][i] !== object2[key][i]){
-          // console.log(object1[obj][i])
-          // console.log(object2[obj][i])
           return false;
           
         }
       } 
-      // we finished the loop at this point
     } else {
-        // if one is a primitive type and the other an array/object will be false
-      // if primitive types not same it will be false
           return object1[key] === object2[key];
     }
       
