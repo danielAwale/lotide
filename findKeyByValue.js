@@ -26,3 +26,5 @@ const bestMovies = {
 };
 
 assertEqual(findKeyByValue(bestMovies, "The Dark Knight"));
+
+module.exports = findKeyByValue;

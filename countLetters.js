@@ -34,3 +34,5 @@ const countLetter = function(countString) {
 }
 
 console.log(countLetter("This is a string"));
+
+module.exports = countLetter;

@@ -37,3 +37,5 @@ const movies = ["Thor", "Morbius", "Memento"];
 
   assertArraysEqual(words, results1);
   assertArraysEqual(movies,results2);
+
+  module.exports = map;

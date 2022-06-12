@@ -84,3 +84,6 @@ assertEqual(eqObjects(cd, cd2), false);
 // }
 
 // console.log(eqObjects(testThree, testFour));
+
+
+module.exports = eqObjects;
