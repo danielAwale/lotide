@@ -19,9 +19,8 @@ const assertArraysEqual = function(arr1, arr2){
 
     const flatten = function(nestedArr) {
       let newArr = [].concat.apply([], nestedArr); // defined a new variable with 2 methods to join the nestedArr to one!
-      return newArr
+      return newArr;
     }
-      console.log(flatten([1,2,[3,4]]));
   
 
 module.exports = flatten
