@@ -9,8 +9,8 @@ const assertEqual = function(actual, expected) {
 
 const findKeyByValue = function(objects, value) {
   let result = '';
-  for (let object in objects) {
-    if (objects[object] === value) {
+  for (let object in objects) { // looping through the object
+    if (objects[object] === value) { // if the values of the actual objects and the value of the parameter are the same it will return the key. 
       return object;
     }
   }
@@ -25,6 +25,6 @@ const bestMovies = {
   horror : "The Conjouring"
 };
 
-assertEqual(findKeyByValue(bestMovies, "The Dark Knight"));
+console.log((findKeyByValue(bestMovies, "The Dark Knight")));
 
 module.exports = findKeyByValue;

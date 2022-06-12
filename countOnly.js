@@ -18,8 +18,8 @@ const assertEqual = function(actual, expected) {
 
 };
 
-const countOnly = function(allItems, itemsToCount){
-  const results = {};
+const countOnly = function(allItems, itemsToCount){ // function takes two parameters
+  const results = {}; // this object is where our results will return too
   for (const item of allItems){
     if (itemsToCount[item]) { 
       if (results[item]) {
