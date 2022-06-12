@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@danielawale/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "PP2.js",
+  "description": "first project for my lighthouse labs web dev flex program. creating a library like lodash called lotide",
+  "main": "head.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/danielAwale/lotide.git"
   },
-  "author": "",
+  "author": "Daniel Awale <danielmadhukarawale@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danielAwale/lotide/issues"
